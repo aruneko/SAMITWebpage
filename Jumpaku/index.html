@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Samitwebpage by aruneko</title>
+  </head>
+  <body>
+    <heaer>
+      <h1>Use git!!</h1>
+    </heaer>
+    <article>
+      <h2>What's git?</h2>
+      <p>gitとはヴァージョン管理システムです.
+        ヴァージョン管理システムはファイル,フォルダの変更履歴を記録,追跡します.
+        これを使うとソースコードの修正や統合を楽に行うことができます.</p>
+        
+      <h2>Start programming using git</h1>
+      <p>gitを使った利用したプログラミングについて説明します.
+      準備するものは次の通りです.</p>
+      <ul>
+        <li>GitHubのアカウント(<a href="https://github.com">https://github.com</a>)</li>
+        <li>SourceTree(<a href="https://ja.atlassian.com/software/sourcetree/overview/">https://ja.atlassian.com/software/sourcetree/overview/</a>)</li>
+      </ul>
+      <p>以下は私がgitを使ってプログラミングを始める時の流れです.</p>
+      <ol>
+        <li>GitHubにリポジトリを作成する</li>
+        <li>自分のパソコンにcloneしてくる</li>
+        <li>SourceTreeで初期化する</li>
+        <li>.gitignoreを作成する</li>
+        <li>開発用のブランチを作成する</li>
+      </ol>
+      <p>GitHubはフトウェア開発プロジェクトのための共有ウェブサービスです.
+      特に複数人で開発する場合にとても役に立ちます.
+      リポジトリとはデータの貯蔵庫であり,フォルダのようなものです.
+      GitHubを利用することでローカルのパソコン内ではなく,リモートのリポジトリを用意することができます.
+      リポジトリを作成する時に<i>"Initialize this repository with a README"</i>チェックを付けてにREADME.mdを作成します.
+      また<i>"Add a lisence"</i>でライセンスを指定できます.</p>
+      <p>GitHub上のリポジトリを自分のパソコンにコピーします.
+      これがcloneです.
+      SourceTreeの<i>"新規/クローンを作成"</i>からGitHubのリポジトリをクローンします.</p>
+      <p>SourceTreeの<i>"Git Flow"</i>からGit Flow用にリポジトリを初期化します.</p>
+      <p>.gitignoreはgit管理から外したいファイル,フォルダを書いておくファイルです.
+      ここに書かれたファイル,フォルダは新しく作成されてもgit管理で管理されません.
+      既にgitで管理されているファイル,フォルダを無視する場合はgit管理から外してから.gitignoreに追加します.
+      git管理から外すにはまずSourceTreeの<i>"ターミナル"</i>からコマンドプロンプトを起動し,コマンドを入力します.
+      例えば"Main.cpp"をgit管理から外すには
+      <code>git rm --cached Main.cpp</code>
+      とします.
+      その後.gitignoreに"Main.cpp"と書き加えます.</p>
+      <p>初期化をするとmasterブランチとdevelopブランチができているはずです.
+      developが開発用のブランチです.
+      現在のブランチをdevelopに移動し,ここから更に機能ごとにブランチを作成します.
+      ブランチの作成にはSourceTreeの"<i>Git Flow</i>"から"<i>新規フィーチャーを開始</i>"を選択します.</p>
+    </article>
+  </body>
+</html>

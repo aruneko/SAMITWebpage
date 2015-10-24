@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja_jp">
+<head>
+    <meta charset = "utf-8">
+    <title>HTMLの使い方</title>
+</head>
+<body>
+    <h1>HTMLとは？</h1>
+    <p> 
+        HTMLとはHyperText Markup Languageの略称であり、
+        Webページを記述することなどに用いられます。
+    </p>
+    <p>
+        HyperTextとはクリックすると他のページへ移動できる
+        ハイパーリンクを埋め込むことができるテキストのことです。
+        Markupとは目印をつけるという意味であり、
+        文章中の各文がどういう役割を持っているかのを示すことを意味します。
+    </p>
+    
+    <h2>タグ</h2>
+    <p>
+        HTMLでは&lt;タグ&gt;を使って文章中の要素の役割を表します。
+        要素は&lt;開始タグ&gt;と&lt;/終了タグ&gt;の間に記述します。
+        例えば段落を表すタグは&lt;p&gt;なので
+        段落の開始タグは&lt;p&gt;、終了タグは&lt;/p&gt;であり、
+        段落は&lt;p&gt;と&lt;/p&gt;
+        の間に記述します。
+        また、タグは入れ子構造を取ることができます。
+    </p>
+    
+    <h1>文章構造を表すタグ</h1>
+    <h2>基本構造</h2>
+    <h3>&lt;!DOCTYPE&gt;</h3>
+    <p>
+        htmlはバージョンによって使用できる要素や配置が異なるので、
+        文章のはじめで&lt;!DOCTYPE&gt;でバージョンを宣言します。
+        HTML5の場合&lt;!DOCTYPE html&gt;と記述します。
+    </p>
+    <h3>&lt;html&gt;</h3>
+    <p>
+        htmlの文章は&lt;!DOCTYPE&gt;を除いてhtmlタグの中に記述します。
+        ただし、htmlタグの中には&lt;head&gt;と&lt;body&gt;を
+        この順で1つずつしか記述できません。
+    </p>
+    <h3>&lt;head&gt;</h3>
+    <p>
+       ここに文章のタイトルなどのヘッダ情報を記述します。
+    </p>
+    <h3>&lt;body&gt;</h3>
+    <p>
+        ここに文章の内容を記述します。
+    </p>
+    <h2>その他の構造</h2>
+    <h3>&lt;title&gt;</h3>
+    <p>
+        ページのタイトルを記述します。
+    </p>
+    <h3>&lt;areticle&gt;</h3>
+    <p>
+        &lt;areticle&gt;のなかで1つの記事をです。        
+    </p>
+    <h3>&lt;p&gt;</h3>
+    <p>
+        &lt;p&gt;のなかで1つの段落です。
+    </p>
+    <h3>&lt;br&gt;</h3>
+    <p>
+        改行します。
+        文の最後などに記述します。
+        ソースコード内で改行しても&lt;br&gt;が無いと改行されません。
+        終了タグは使いません。
+    </p>
+    <h3>&lt;footer&gt;</h3>
+    <p>
+        フッターを記述します。
+        作者名などを書くといいでしょう。
+    </p>
+    <footer>
+        時間足りなかったわぁ<br>
+        <small>(C) SAMIT Namba 2015</small>
+    </footer>
+</body>
+</html>
